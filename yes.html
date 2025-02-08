@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine</title>
+    <link rel="stylesheet" href="yes_style.css" />
+    <link rel="icon" href="valentine_icon.webp" />
+    <script src="yes.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="header">Yayyy!!</h1>
+      </div>
+      <div>
+        <img
+          class="image_container"
+          src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGZpb3NsNm1vcnhjdzkwYWYxNHhreDE0aDZyNHloYmZib2htYXRpMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XZgemSAbwljyNWg3KL/giphy.gif"
+          alt="cute animated"
+        />
+      </div>
+      <div class="button">
+        <button class="btn" id="yesButton" onclick="reset()">
+          Mulai Ulang
+        </button>
+        <script>
+          function reset() {
+            window.location.href = "index.html";
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+  <script src="confetti.js"></script>
+  <script>
+    const start = {};
+    {
+      setTimeout(function () {
+        confetti.start();
+      });
+    }
+
+    start();
+  </script>
+</html>
