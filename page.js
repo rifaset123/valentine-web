@@ -13,6 +13,17 @@ let imageList = [
   "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTcxbXViMTY0M2F6c3V3NGtkenduY3ZubWx6Mjh2c3d5ZHAwejFxNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/loXWSt4nDfcYAhnmdB/giphy.gif",
 ];
 
+let yesList = [
+  "Malas!",
+  "Yakin gamau?",
+  "Yakin bangettt gamau?",
+  "Beneran nih gamau?",
+  "...",
+  "Tetep gamau?",
+  "Kalo aku maksa gimana?",
+  "Mauuu kann!",
+];
+
 let currentIndex = 0;
 
 let clickCount = 0;
@@ -48,4 +59,7 @@ function reject() {
   clickCount++;
   currentIndex = (currentIndex + 1) % imageList.length;
   document.getElementById("animatedImage").src = imageList[currentIndex];
+
+  let textIndex = currentIndex % yesList.length;
+  btn.innerText = yesList[textIndex];
 }
